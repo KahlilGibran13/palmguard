@@ -14,7 +14,7 @@ class AdminSeeder extends Seeder
             'name'     => 'Admin PalmGuard',
             'email'    => 'admin@palmguard.com',
             'password' => Hash::make('admin123'),
-            'role'     => 'admin',
+            'role'     => 'admin'
         ]);
     }
 }
