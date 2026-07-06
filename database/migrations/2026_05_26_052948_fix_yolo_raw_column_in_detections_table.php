@@ -8,15 +8,15 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('detections', function (Blueprint $table) {
-            $table->longText('yolo_raw')->nullable()->change();
+        Schema::table('detection', function (Blueprint $table) {
+            $table->longText('yolo_raw')->nullable();
         });
     }
 
     public function down(): void
     {
-        Schema::table('detections', function (Blueprint $table) {
-            $table->text('yolo_raw')->nullable()->change();
+        Schema::table('detection', function (Blueprint $table) {
+            $table->text('yolo_raw')->nullable();
         });
     }
 };

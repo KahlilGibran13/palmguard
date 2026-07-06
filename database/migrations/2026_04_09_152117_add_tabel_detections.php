@@ -33,7 +33,7 @@ return new class extends Migration
             $table->string('description')->nullable(); // keterangan singkat
             $table->decimal('confidence', 5, 2);
             $table->text('bounding_box')->nullable();
-            $table->text('yolo_raw')->nullable();
+            // $table->text('yolo_raw')->nullable();
             $table->string('file_size')->nullable();
             $table->string('source')->default('upload');
             
