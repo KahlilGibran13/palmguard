@@ -127,5 +127,13 @@ class DatabaseSeeder extends Seeder
         }
 
         $this->command->info('Seed Penyakit dan Ciri berhasil!');
+
+        User::create([
+            'name'     => 'Admin PalmGuard',
+            'email'    => 'admin@palmguard.com',
+            'password' => Hash::make('admin123'),
+            'role'     => 'admin'
+        ]);
+        $this->command->info('Seed Admin User berhasil!');
     }
 }
